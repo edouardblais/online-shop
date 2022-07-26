@@ -9,9 +9,9 @@ const App = () => {
     <BrowserRouter>
             <Nav />
             <Routes>
-                <Route path='/Home' element={<Home />} />
-                <Route path='/Shop' element={<Shop />} />
-                <Route path='/Cart' element={<Cart />} />
+                <Route path='/' element={<Home />} />
+                    <Route path='/Shop' element={<Shop />} />
+                    <Route path='/Cart' element={<Cart />} />
             </Routes>
         </BrowserRouter>
     )
