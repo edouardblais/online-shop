@@ -12,33 +12,43 @@ import tritonimage from '../images/triton.jpg';
 const Data = [
     {name:'The Moon',
      image: moonimage,
+     price: '900 000 000 000.00$'
     },
     {name:'Callisto',
      image: callistoimage,
+     price: '200 000 000 000.00$'
     },
     {name:'Io',
      image: ioimage,
+     price: '700 000 000 000.00$'
     },
     {name:'Charon',
      image: charonimage,
+     price: '10 000 000 000.00$'
     },
     {name:'Enceladus',
      image: enceladusimage,
+     price: '400 000 000 000.00$'
     },
     {name:'Ganymede',
      image: ganymedeimage,
+     price: '500 000 000 000.00$'
     },
     {name:'Europa',
      image: europaimage,
+     price: '500 000 000 000.00$'
     },
     {name:'Phobos',
      image: phobosimage,
+     price: '300 000 000 000.00$'
     },
     {name:'Titan',
      image: titanimage,
+     price: '600 000 000 000.00$'
     },
     {name:'Triton',
      image: tritonimage,
+     price: '400 000 000 000.00$'
     },
 ];
 

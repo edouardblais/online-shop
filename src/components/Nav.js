@@ -4,7 +4,7 @@ import '../index.css'
 
 const Nav = () => {
     return (
-        <nav className="flex flex-row text-white bg-gray-900">
+        <nav className="flex flex-row text-white bg-black">
             <h3 className="text-xl">Moon Shop</h3>
             <ul className="flex flex-grow flex-row justify-evenly">
                 <Link to=''>
