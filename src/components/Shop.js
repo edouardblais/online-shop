@@ -2,7 +2,7 @@ import React from "react";
 import Data from './Data';
 import { Link } from "react-router-dom";
 
-const Shop = () => {
+const Shop = ({addToCart}) => {
 
     return (
         <div className="bg-black text-white flex flex-column justify-center flex-grow">
@@ -13,7 +13,7 @@ const Shop = () => {
                                 <div>Price: {mooninfo.price}</div>
                                 <img alt='' src={mooninfo.image} className="max-w-lg max-h-96"></img>
                                 <Link to={mooninfo.name}>See Info</Link >
-                                <button>Add to Cart</button>
+                                <button onClick={() => addToCart(mooninfo)}>Add to Cart</button>
                             </div> 
                     )
                 })}
