@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Cart = ({cart}) => {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(cart.length);
 
     const incrementCount = () => {
         setCount(count + 1);
@@ -17,16 +17,18 @@ const Cart = ({cart}) => {
     }
 
     return (
-        <div className="bg-black text-white flex flex-column justify-center flex-grow h-screen">
-            {cart?.map((item, index) => (
-                
-                <div key={index}>
-                    <div>{item.name}</div>
-                    <button onClick={incrementCount}>Add</button>
-                    <button onClick={decrementCount}>Remove</button>
-                </div>
-            
-        ))}
+        <div className="bg-black text-white flex flex-col items-center flex-grow h-screen">
+            <div>{count}</div>
+            <div>
+                {cart?.map((item, index) => (
+                    
+                    <div key={index}>
+                        <div>{item.name}</div>
+                        <button onClick={incrementCount}>Add</button>
+                        <button onClick={decrementCount}>Remove</button>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
