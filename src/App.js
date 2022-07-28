@@ -10,6 +10,8 @@ const App = () => {
 
     const [cart, setCart] = useState([]);
 
+    const [carttodisplay, setCarttodisplay] = useState([]);
+
     const [totalcount, setTotalcount] = useState(0);
 
     const addToCart = (mooninfo) => {
@@ -22,7 +24,12 @@ const App = () => {
     }
 
     useEffect(() => {
+        
         setTotalcount(cart.length);
+
+        const newcarttodisplay = cart.filter((item, index, self) => (index === self.findIndex((t) => (t.name === item.name))));
+        setCarttodisplay(newcarttodisplay);
+
     }, [cart])
 
     const increaseQuantity = (item) => {
@@ -45,7 +52,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                     <Route path='/Shop' element={<Shop addToCart={addToCart}/>} />
                         <Route path='/Shop/:name' element={<Moon />} />
-                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalcount={totalcount} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
+                    <Route path='/Cart' element={<Cart carttodisplay={carttodisplay} clearCart={clearCart} totalcount={totalcount} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
             </Routes>
         </BrowserRouter>
     )

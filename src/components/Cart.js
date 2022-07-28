@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({cart,
+const Cart = ({carttodisplay,
                clearCart,
                totalcount, 
                increaseQuantity,
@@ -12,7 +12,7 @@ const Cart = ({cart,
             <div>{totalcount}</div>
             <button onClick={clearCart}>Clear Cart</button>
             <div>
-                {cart?.map((item, index) => (
+                {carttodisplay?.map((item, index) => (
                     
                     <div key={index}>
                         <div>{item.name}</div>
