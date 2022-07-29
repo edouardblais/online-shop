@@ -10,7 +10,7 @@ const Shop = ({addToCart, addAcres}) => {
                 {Data?.map((mooninfo) => {
                     return ( <div key={mooninfo.name}>
                                 <div>{mooninfo.name}</div>
-                                <div>Price per acre: {mooninfo.price}</div>
+                                <div>Price per acre: {mooninfo.price}$</div>
                                 <img alt='' src={mooninfo.image} className="aspect-auto max-w-lg"></img>
                                 <Link to={mooninfo.name}>See Info</Link >
                                 <form method="post" action="">

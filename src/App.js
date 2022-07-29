@@ -10,7 +10,7 @@ const App = () => {
 
     const [cart, setCart] = useState([]);
 
-    const [totalcount, setTotalcount] = useState(0);
+    const [totalprice, setTotalprice] = useState(0);
 
     const addToCart = (mooninfo) => {
         if ([...cart].includes(mooninfo)) {
@@ -29,9 +29,9 @@ const App = () => {
     }
 
     useEffect(() => {
-        const datacounts = [...cart].map((moon) => moon.count);
-        const newtotalcount = datacounts.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
-        setTotalcount(newtotalcount);
+        const pricesXacres = [...cart].map((moon) => moon.count*moon.price);
+        const newtotalprice = pricesXacres.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+        setTotalprice(newtotalprice);
 
     }, [cart])
 
@@ -41,7 +41,7 @@ const App = () => {
     }
 
     const decreaseQuantity = (item, index) => {
-        if (totalcount === 0) {
+        if (totalprice === 0) {
             return
         } else {
             const newcart = [...cart.slice(0, index), ...cart.slice(index +1)];
@@ -57,7 +57,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                     <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres}/>} />
                         <Route path='/Shop/:name' element={<Moon addToCart={addToCart}/>} />
-                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalcount={totalcount} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
+                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
             </Routes>
         </BrowserRouter>
     )
