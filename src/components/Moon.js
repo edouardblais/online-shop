@@ -7,11 +7,10 @@ const Moon = () => {
     const moondata = Data.filter(moon => (moon.name === name));
 
     return (
-        <div className="bg-black text-white flex flex-column justify-center flex-grow h-screen">
-            <div>
-                {name}
-            </div>
-            <img alt="" src={moondata[0].image}></img>
+        <div className="bg-black text-white flex flex-col justify-center flex-grow h-screen">
+            <div>{name}</div>
+            <div>Price per acre: {moondata[0].price}</div>
+            <img alt="" src={moondata[0].image} className="aspect-auto max-w-lg"></img>
            
         </div>
     )

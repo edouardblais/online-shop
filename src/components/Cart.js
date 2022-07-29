@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({carttodisplay,
+const Cart = ({cart,
                clearCart,
                totalcount, 
                increaseQuantity,
@@ -12,12 +12,13 @@ const Cart = ({carttodisplay,
             <div>{totalcount}</div>
             <button onClick={clearCart}>Clear Cart</button>
             <div>
-                {carttodisplay?.map((item, index) => (
+                {cart?.map((item, index) => (
                     
                     <div key={index}>
                         <div>{item.name}</div>
+                        <div>{item.count}</div>
                         <button onClick={() => increaseQuantity(item)}>+</button>
-                        <button onClick={() => decreaseQuantity(index)}>-</button>
+                        <button onClick={() => decreaseQuantity(item, index)}>-</button>
                     </div>
                 ))}
             </div>
