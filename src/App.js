@@ -21,7 +21,8 @@ const App = () => {
     }
 
     const addAcres = (e, mooninfo) => {
-        return mooninfo.count = e.target.value;
+        mooninfo.count = Number(e.target.value);
+        setTotalprice(totalprice+(mooninfo.count*mooninfo.price));
     }
 
     const clearCart = () => {
@@ -33,20 +34,23 @@ const App = () => {
         const newtotalprice = pricesXacres.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
         setTotalprice(newtotalprice);
 
-    }, [cart])
+    }, [cart, totalprice])
 
     const increaseQuantity = (item) => {
-        addToCart(item)
-        item.count += 1;
+        item.count += 10;
+        setTotalprice(totalprice+(10*item.price));
     }
 
     const decreaseQuantity = (item, index) => {
         if (totalprice === 0) {
             return
         } else {
-            const newcart = [...cart.slice(0, index), ...cart.slice(index +1)];
-            setCart(newcart);
-            item.count -= 1;
+            item.count -= 10;
+            setTotalprice(totalprice-(10*item.price));
+            if (item.count <= 0) {
+                const newcart = [...cart.slice(0, index), ...cart.slice(index +1)];
+                setCart(newcart);
+            }
         }
     }
 

@@ -16,9 +16,9 @@ const Cart = ({cart,
                     
                     <div key={index}>
                         <div>{item.name}</div>
-                        <div>{item.count}</div>
-                        <button onClick={() => increaseQuantity(item)}>+</button>
-                        <button onClick={() => decreaseQuantity(item, index)}>-</button>
+                        <div>Number of acres in cart: {item.count}</div>
+                        <button onClick={() => increaseQuantity(item)}>+10</button>
+                        <button onClick={() => decreaseQuantity(item, index)}>-10</button>
                     </div>
                 ))}
             </div>
