@@ -60,7 +60,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                     <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres}/>} />
-                        <Route path='/Shop/:name' element={<Moon addToCart={addToCart}/>} />
+                        <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres}/>} />
                     <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
             </Routes>
         </BrowserRouter>

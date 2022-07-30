@@ -14,7 +14,7 @@ const Shop = ({addToCart, addAcres}) => {
                                 <img alt='' src={mooninfo.image} className="aspect-auto max-w-lg"></img>
                                 <Link to={mooninfo.name}>See Info</Link >
                                 <form method="post" action="">
-                                    <label>How many acres do you wish to purchase?</label>
+                                    <label>Number of acres desired:</label>
                                     <input className='text-black' type='text' name={mooninfo.name} onChange={(e) => addAcres(e, mooninfo)}></input>
                                 </form>
                                 <button type='button' onClick={() => addToCart(mooninfo)}>Add to Cart</button>
