@@ -9,18 +9,21 @@ const Cart = ({cart,
 
     return (
         <div className="bg-black text-white flex flex-col items-center flex-grow h-screen">
-            <div>Total: {totalprice}$</div>
-            <button onClick={clearCart}>Clear Cart</button>
             <div>
                 {cart?.map((item, index) => (
                     
-                    <div key={index}>
+                    <div key={index} className="flex flew-row gap-4">
                         <div>{item.name}</div>
-                        <div>Number of acres in cart: {item.count}</div>
-                        <button onClick={() => increaseQuantity(item)}>+10</button>
                         <button onClick={() => decreaseQuantity(item, index)}>-10</button>
+                        <div>{item.count} acres</div>
+                        <button onClick={() => increaseQuantity(item)}>+10</button>
+                        <div>{item.price*item.count}$</div>
                     </div>
                 ))}
+            </div>
+            <div>
+                <div>Total: {totalprice}$</div>
+                <button onClick={clearCart}>Clear Cart</button>
             </div>
         </div>
     )
