@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import '../index.css'
 
-const Nav = () => {
+const Nav = ({cart}) => {
     return (
         <nav className="flex flex-row text-white bg-black">
             <h3 className="text-xl">Moon Shop</h3>
@@ -14,7 +14,7 @@ const Nav = () => {
                     <li>Shop</li>
                 </Link>
                 <Link to='Cart'>
-                    <li>Cart</li>
+                    <li>Cart({cart.length})</li>
                 </Link>
             </ul>
         </nav>
