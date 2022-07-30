@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cart = ({cart,
                clearCart,
@@ -25,6 +26,7 @@ const Cart = ({cart,
                 <div>Total: {totalprice}$</div>
                 <button onClick={clearCart}>Clear Cart</button>
             </div>
+            <Link to='Checkout'>Proceed To Payment</Link >
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Shop from './components/Shop'
 import Cart from './components/Cart'
 import Nav from './components/Nav'
 import Moon from './components/Moon'
+import Checkout from './components/Checkout'
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
                     <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres}/>} />
                         <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres}/>} />
                     <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
+                        <Route path='/Cart/Checkout' element={<Checkout/>} />
             </Routes>
         </BrowserRouter>
     )
