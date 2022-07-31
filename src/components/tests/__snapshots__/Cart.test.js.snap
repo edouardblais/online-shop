@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart component renders correctly 1`] = `
+Array [
+  <div
+    className="bg-black text-white flex flex-col items-center flex-grow h-screen"
+  >
+    <div />
+    <div>
+      <div>
+        Total: 
+        $
+      </div>
+      <button>
+        Clear Cart
+      </button>
+    </div>
+    <a
+      href="/Checkout"
+      onClick={[Function]}
+    >
+      Proceed To Payment
+    </a>
+  </div>,
+  ")",
+]
+`;

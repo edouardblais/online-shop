@@ -56,7 +56,7 @@ const App = () => {
     }
 
   return (
-    <BrowserRouter>
+        <BrowserRouter>
             <Nav cart={cart}/>
             <Routes>
                 <Route path='/' element={<Home />} />

@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop component renders correctly 1`] = `
+Array [
+  <div
+    className="bg-black text-white flex flex-col justify-center flex-grow"
+  >
+    <div
+      className="flex flex-row gap-6 flex-wrap"
+    >
+      <div>
+        <div>
+          The Moon
+        </div>
+        <div>
+          Price per acre: 
+          90000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="moon.jpg"
+        />
+        <a
+          href="/The Moon"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="The Moon"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Callisto
+        </div>
+        <div>
+          Price per acre: 
+          20000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="Callisto.jpg"
+        />
+        <a
+          href="/Callisto"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Callisto"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Io
+        </div>
+        <div>
+          Price per acre: 
+          70000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="io.jpg"
+        />
+        <a
+          href="/Io"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Io"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Charon
+        </div>
+        <div>
+          Price per acre: 
+          10000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="charon.jpg"
+        />
+        <a
+          href="/Charon"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Charon"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Enceladus
+        </div>
+        <div>
+          Price per acre: 
+          40000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="enceladus.jpg"
+        />
+        <a
+          href="/Enceladus"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Enceladus"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Ganymede
+        </div>
+        <div>
+          Price per acre: 
+          50000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="ganymede.jpg"
+        />
+        <a
+          href="/Ganymede"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Ganymede"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Europa
+        </div>
+        <div>
+          Price per acre: 
+          50000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="europa.jpg"
+        />
+        <a
+          href="/Europa"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Europa"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Phobos
+        </div>
+        <div>
+          Price per acre: 
+          30000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="phobos.jpg"
+        />
+        <a
+          href="/Phobos"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Phobos"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Titan
+        </div>
+        <div>
+          Price per acre: 
+          60000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="titan.jpg"
+        />
+        <a
+          href="/Titan"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Titan"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div>
+        <div>
+          Triton
+        </div>
+        <div>
+          Price per acre: 
+          40000000
+          $
+        </div>
+        <img
+          alt=""
+          className="aspect-auto max-w-lg"
+          src="triton.jpg"
+        />
+        <a
+          href="/Triton"
+          onClick={[Function]}
+        >
+          See Info
+        </a>
+        <form
+          action=""
+          method="post"
+        >
+          <label>
+            Number of acres desired:
+          </label>
+          <input
+            className="text-black"
+            name="Triton"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>,
+  ")",
+]
+`;
