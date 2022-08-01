@@ -32,11 +32,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="The Moon"
+          >
+            Number of acres desired on 
+            The Moon
+            :
           </label>
           <input
             className="text-black"
+            id="The Moon"
             name="The Moon"
             onChange={[Function]}
             type="text"
@@ -73,11 +78,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Callisto"
+          >
+            Number of acres desired on 
+            Callisto
+            :
           </label>
           <input
             className="text-black"
+            id="Callisto"
             name="Callisto"
             onChange={[Function]}
             type="text"
@@ -114,11 +124,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Io"
+          >
+            Number of acres desired on 
+            Io
+            :
           </label>
           <input
             className="text-black"
+            id="Io"
             name="Io"
             onChange={[Function]}
             type="text"
@@ -155,11 +170,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Charon"
+          >
+            Number of acres desired on 
+            Charon
+            :
           </label>
           <input
             className="text-black"
+            id="Charon"
             name="Charon"
             onChange={[Function]}
             type="text"
@@ -196,11 +216,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Enceladus"
+          >
+            Number of acres desired on 
+            Enceladus
+            :
           </label>
           <input
             className="text-black"
+            id="Enceladus"
             name="Enceladus"
             onChange={[Function]}
             type="text"
@@ -237,11 +262,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Ganymede"
+          >
+            Number of acres desired on 
+            Ganymede
+            :
           </label>
           <input
             className="text-black"
+            id="Ganymede"
             name="Ganymede"
             onChange={[Function]}
             type="text"
@@ -278,11 +308,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Europa"
+          >
+            Number of acres desired on 
+            Europa
+            :
           </label>
           <input
             className="text-black"
+            id="Europa"
             name="Europa"
             onChange={[Function]}
             type="text"
@@ -319,11 +354,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Phobos"
+          >
+            Number of acres desired on 
+            Phobos
+            :
           </label>
           <input
             className="text-black"
+            id="Phobos"
             name="Phobos"
             onChange={[Function]}
             type="text"
@@ -360,11 +400,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Titan"
+          >
+            Number of acres desired on 
+            Titan
+            :
           </label>
           <input
             className="text-black"
+            id="Titan"
             name="Titan"
             onChange={[Function]}
             type="text"
@@ -401,11 +446,16 @@ Array [
           action=""
           method="post"
         >
-          <label>
-            Number of acres desired:
+          <label
+            htmlFor="Triton"
+          >
+            Number of acres desired on 
+            Triton
+            :
           </label>
           <input
             className="text-black"
+            id="Triton"
             name="Triton"
             onChange={[Function]}
             type="text"
