@@ -15,20 +15,18 @@ describe('Cart component', () => {
         expect(cart).toMatchSnapshot();
     })
 
-    it('renders cart elements', () => {
-        const cart = [
+    it('renders correct cart elements', () => {
+        const cartmock = [
             {name:'The Moon',
-             image: 'moonimage',
              price: 90000000,
              count: 0,
             },
             {name:'Callisto',
-             image: 'callistoimage',
              price: 20000000,
              count: 0,
             },]
         
-        render(<Cart cart={cart}/>, {wrapper: MemoryRouter});
+        render(<Cart cart={cartmock}/>, {wrapper: MemoryRouter});
 
         const moon = screen.queryByText('The Moon');
         expect(moon).toBeInTheDocument();
@@ -41,5 +39,25 @@ describe('Cart component', () => {
 
         const phobos = screen.queryByText('Phobos');
         expect(phobos).not.toBeInTheDocument();
+    })
+
+    it('renders correct total price for each moon', () => {
+        const cartmock = [
+            {name:'The Moon',
+             price: 9,
+             count: 10,
+            },
+            {name:'Callisto',
+             price: 2,
+             count: 10,
+            },]
+        
+        render(<Cart cart={cartmock}/>, {wrapper: MemoryRouter});
+
+        const expectedtotalpriceforTheMoon = screen.queryByText('90$');
+        expect(expectedtotalpriceforTheMoon).toBeInTheDocument();
+        
+        const expectedtotalpriceforCallisto = screen.queryByText('20$');
+        expect(expectedtotalpriceforCallisto).toBeInTheDocument();
     })
 })
