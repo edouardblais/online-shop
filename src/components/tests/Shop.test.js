@@ -25,4 +25,11 @@ describe('Shop component', () => {
 
         expect(addAcresMock).toHaveBeenCalledTimes(3);
     })
+
+    it('renders appropriate image', () => {
+        render(<Shop/>, {wrapper: MemoryRouter});
+        const img = screen.getByAltText('Io');
+
+        expect(img.src).toBe('http://localhost/io.jpg')
+    })
 })

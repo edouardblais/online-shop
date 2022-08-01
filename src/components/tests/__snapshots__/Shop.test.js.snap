@@ -18,7 +18,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="The Moon"
           className="aspect-auto max-w-lg"
           src="moon.jpg"
         />
@@ -64,7 +64,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Callisto"
           className="aspect-auto max-w-lg"
           src="Callisto.jpg"
         />
@@ -110,7 +110,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Io"
           className="aspect-auto max-w-lg"
           src="io.jpg"
         />
@@ -156,7 +156,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Charon"
           className="aspect-auto max-w-lg"
           src="charon.jpg"
         />
@@ -202,7 +202,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Enceladus"
           className="aspect-auto max-w-lg"
           src="enceladus.jpg"
         />
@@ -248,7 +248,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Ganymede"
           className="aspect-auto max-w-lg"
           src="ganymede.jpg"
         />
@@ -294,7 +294,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Europa"
           className="aspect-auto max-w-lg"
           src="europa.jpg"
         />
@@ -340,7 +340,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Phobos"
           className="aspect-auto max-w-lg"
           src="phobos.jpg"
         />
@@ -386,7 +386,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Titan"
           className="aspect-auto max-w-lg"
           src="titan.jpg"
         />
@@ -432,7 +432,7 @@ Array [
           $
         </div>
         <img
-          alt=""
+          alt="Triton"
           className="aspect-auto max-w-lg"
           src="triton.jpg"
         />

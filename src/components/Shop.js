@@ -11,7 +11,7 @@ const Shop = ({addToCart, addAcres}) => {
                     return ( <div key={mooninfo.name}>
                                 <div>{mooninfo.name}</div>
                                 <div>Price per acre: {mooninfo.price}$</div>
-                                <img alt='' src={mooninfo.image} className="aspect-auto max-w-lg"></img>
+                                <img alt={mooninfo.name} src={mooninfo.image} className="aspect-auto max-w-lg"></img>
                                 <Link to={mooninfo.name}>See Info</Link >
                                 <form method="post" action="">
                                     <label htmlFor={mooninfo.name}>Number of acres desired on {mooninfo.name}:</label>
