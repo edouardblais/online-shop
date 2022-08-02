@@ -15,7 +15,7 @@ const Shop = ({addToCart, addAcres}) => {
                                 <Link to={mooninfo.name}>See Info</Link >
                                 <form method="post" action="">
                                     <label htmlFor={mooninfo.name}>Number of acres desired on {mooninfo.name}:</label>
-                                    <input className='text-black' type='text' id={mooninfo.name} name={mooninfo.name} onChange={(e) => addAcres(e, mooninfo)}></input>
+                                    <input className='text-black' type='number' id={mooninfo.name} name={mooninfo.name} onChange={(e) => addAcres(e, mooninfo)}></input>
                                 </form>
                                 <button type='button' onClick={() => addToCart(mooninfo)}>Add to Cart</button>
                             </div> 

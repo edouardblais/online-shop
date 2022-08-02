@@ -22,8 +22,12 @@ const App = () => {
     }
 
     const addAcres = (e, mooninfo) => {
-        mooninfo.count = Number(e.target.value);
-        setTotalprice(totalprice+(mooninfo.count*mooninfo.price));
+        if(Number(e.target.value) >= 0) {
+            mooninfo.count = e.target.value;
+            setTotalprice(totalprice+(mooninfo.count*mooninfo.price));
+        } else {
+            throw new Error('Please enter a number higher than 0');
+        }
     }
 
     const clearCart = () => {

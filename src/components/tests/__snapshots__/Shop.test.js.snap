@@ -44,7 +44,7 @@ Array [
             id="The Moon"
             name="The Moon"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -90,7 +90,7 @@ Array [
             id="Callisto"
             name="Callisto"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -136,7 +136,7 @@ Array [
             id="Io"
             name="Io"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -182,7 +182,7 @@ Array [
             id="Charon"
             name="Charon"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -228,7 +228,7 @@ Array [
             id="Enceladus"
             name="Enceladus"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -274,7 +274,7 @@ Array [
             id="Ganymede"
             name="Ganymede"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -320,7 +320,7 @@ Array [
             id="Europa"
             name="Europa"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -366,7 +366,7 @@ Array [
             id="Phobos"
             name="Phobos"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -412,7 +412,7 @@ Array [
             id="Titan"
             name="Titan"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
@@ -458,7 +458,7 @@ Array [
             id="Triton"
             name="Triton"
             onChange={[Function]}
-            type="text"
+            type="number"
           />
         </form>
         <button
