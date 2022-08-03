@@ -54,10 +54,10 @@ describe('Cart component', () => {
         
         render(<Cart cart={cartmock}/>, {wrapper: MemoryRouter});
 
-        const expectedtotalpriceforTheMoon = screen.queryByText('90$');
+        const expectedtotalpriceforTheMoon = screen.queryByText('$ 90');
         expect(expectedtotalpriceforTheMoon).toBeInTheDocument();
         
-        const expectedtotalpriceforCallisto = screen.queryByText('20$');
+        const expectedtotalpriceforCallisto = screen.queryByText('$ 20');
         expect(expectedtotalpriceforCallisto).toBeInTheDocument();
     })
 })
