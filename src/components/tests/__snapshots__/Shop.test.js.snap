@@ -47,6 +47,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -93,6 +94,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -139,6 +141,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -185,6 +188,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -231,6 +235,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -277,6 +282,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -323,6 +329,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -369,6 +376,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -415,6 +423,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"
@@ -461,6 +470,7 @@ Array [
             type="number"
           />
         </form>
+        <div />
         <button
           onClick={[Function]}
           type="button"

@@ -2,8 +2,7 @@ import React from "react";
 import Data from './Data';
 import { Link } from "react-router-dom";
 
-const Shop = ({addToCart, addAcres}) => {
-
+const Shop = ({addToCart, addAcres, message}) => {
     return (
         <div className="bg-black text-white flex flex-col justify-center flex-grow">
             <div className="flex flex-row gap-6 flex-wrap">
@@ -17,6 +16,7 @@ const Shop = ({addToCart, addAcres}) => {
                                     <label htmlFor={mooninfo.name}>Number of acres desired on {mooninfo.name}:</label>
                                     <input className='text-black' type='number' id={mooninfo.name} name={mooninfo.name} onChange={(e) => addAcres(e, mooninfo)}></input>
                                 </form>
+                                <div>{message}</div>
                                 <button type='button' onClick={() => addToCart(mooninfo)}>Add to Cart</button>
                             </div> 
                     )

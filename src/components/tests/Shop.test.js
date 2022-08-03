@@ -35,21 +35,6 @@ describe('Shop component', () => {
         expect(addAcresMock).not.toHaveBeenCalled();
     })
 
-    /*it('does not accept negative numbers', () => {
-        const addAcresMock = (input) => {
-            if(Number(input) >= 0) {
-                return
-            } else {
-                throw Error('Please enter a number higher than 0');
-            }
-        }
-        render(<Shop addAcres={addAcresMock}/>, {wrapper: MemoryRouter})
-        const input = screen.getByLabelText('Number of acres desired on Callisto:');
-
-        userEvent.type(input, '-10');
-        expect(addAcresMock(input)).toThrow('Please enter a number higher than 0');
-    })*/
-
     it('renders appropriate image', () => {
         render(<Shop/>, {wrapper: MemoryRouter});
         const img = screen.getByAltText('Io');

@@ -13,20 +13,23 @@ const App = () => {
 
     const [totalprice, setTotalprice] = useState(0);
 
+    const [message, setMessage] = useState('');
+
     const addToCart = (mooninfo) => {
-        if ([...cart].includes(mooninfo)) {
-            return
-        } else {
+        if ((![...cart].includes(mooninfo)) && (mooninfo.count>0)) {
             setCart(prevState => [...prevState, mooninfo]);
+        } else {
+            return
         }
     }
 
     const addAcres = (e, mooninfo) => {
-        if(Number(e.target.value) >= 0) {
-            mooninfo.count = e.target.value;
+        if(e.target.value >= 0) {
+            setMessage('');
+            mooninfo.count = Number(e.target.value);
             setTotalprice(totalprice+(mooninfo.count*mooninfo.price));
         } else {
-            throw new Error('Please enter a number higher than 0');
+            setMessage('Please enter a number higher than 0');
         }
     }
 
@@ -64,7 +67,7 @@ const App = () => {
             <Nav cart={cart}/>
             <Routes>
                 <Route path='/' element={<Home />} />
-                    <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres}/>} />
+                    <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message}/>} />
                         <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres}/>} />
                     <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
                         <Route path='/Cart/Checkout' element={<Checkout/>} />
