@@ -67,14 +67,18 @@ const App = () => {
         }
     }
 
+    const numberWithSep = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      }
+
   return (
         <BrowserRouter>
             <Nav cart={cart}/>
             <Routes>
                 <Route path='/' element={<Home />} />
-                    <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message}/>} />
-                        <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres}/>} />
-                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
+                    <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message} numberWithSep={numberWithSep}/>} />
+                        <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres} numberWithSep={numberWithSep}/>} />
+                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} numberWithSep={numberWithSep} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
                         <Route path='/Cart/Checkout' element={<Checkout/>} />
             </Routes>
         </BrowserRouter>

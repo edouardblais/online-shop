@@ -2,14 +2,18 @@ import React from "react";
 import Data from './Data';
 import { Link } from "react-router-dom";
 
-const Shop = ({addToCart, addAcres, message}) => {
+const Shop = ({addToCart, 
+               addAcres, 
+               message,
+               numberWithSep,
+            }) => {
     return (
         <div className="bg-black text-white flex flex-col justify-center flex-grow">
             <div className="flex flex-row gap-6 flex-wrap">
                 {Data?.map((mooninfo) => {
                     return ( <div key={mooninfo.name}>
                                 <div>{mooninfo.name}</div>
-                                <div>Price per acre: {mooninfo.price}$</div>
+                                <div>Price per acre: {numberWithSep(mooninfo.price)}$</div>
                                 <img alt={mooninfo.name} src={mooninfo.image} className="aspect-auto max-w-lg"></img>
                                 <Link to={mooninfo.name}>See Info</Link >
                                 <form method="post" action="">

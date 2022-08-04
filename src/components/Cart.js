@@ -6,7 +6,8 @@ const Cart = ({cart,
                totalprice, 
                increaseQuantity,
                decreaseQuantity,
-               deleteItem
+               deleteItem,
+               numberWithSep,
               }) => {
 
     return (
@@ -22,11 +23,11 @@ const Cart = ({cart,
                             <div className="flex flex-col gap-4 items-center">
                                 <div className="gap-2 flex-row flex">
                                     <button className="rounded-full bg-black text-white p-2" onClick={() => decreaseQuantity(item, index)}>-10</button>
-                                    <div className="border-2 border-black p-1 rounded">{item.count} acres</div>
+                                    <div className="border-2 border-black p-1 rounded">{numberWithSep(item.count)} acres</div>
                                     <button className="rounded-full bg-black text-white p-2" onClick={() => increaseQuantity(item)}>+10</button>
                                 </div>
                                 <button  className="border border-black p-1 rounded" onClick={() => deleteItem(item)}>Delete</button>
-                                <div className="text-lg">$ {item.price*item.count}</div>
+                                <div className="text-lg">$ {numberWithSep(item.price*item.count)}</div>
                             </div>
                         </div>
                     ))}
@@ -34,7 +35,7 @@ const Cart = ({cart,
                 <div className="flex flex-row gap-2 items-center justify-start">
                     <button className="font-bold text-lg rounded bg-black text-white p-2 " onClick={clearCart}>Clear Cart</button>
                     <div className="flex grow"></div> 
-                    <div className="font-bold text-lg">Total: {totalprice}$</div>
+                    <div className="font-bold text-lg">Total: {numberWithSep(totalprice)}$</div>
                 </div>
                 <div className="items-center flex flex-row justify-center">
                     <Link to='Checkout' className="font-bold text-lg rounded bg-black text-white p-2">Proceed To Payment</Link >
