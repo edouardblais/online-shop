@@ -10,15 +10,27 @@ const Moon = ({addAcres,
     const moondata = Data.filter(moon => (moon.name === name));
 
     return (
-        <div className="bg-black text-white flex flex-col justify-center flex-grow h-screen">
-            <div>{name}</div>
-            <div>$ {numberWithSep(moondata[0].price)} per acre</div>
-            <img alt="" src={moondata[0].image} className="aspect-auto max-w-lg"></img>
-            <form method="post" action="">
-                <label>Number of acres desired:</label>
-                <input className='text-black' type='text' name={moondata[0].name} onChange={(e) => addAcres(e, moondata[0])}></input>
-            </form>
-            <button type='button' onClick={() => addToCart(moondata[0])}>Add to Cart</button>
+        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24">
+            <div className="bg-black text-white flex justify-center items-center grow gap-4 p-4 max-w-[60%] min-w-[25%]">
+                <div>
+                    <img alt="" src={moondata[0].image} className="aspect-auto max-w-lg"></img>
+                </div>
+                <div  className="flex flex-col gap-4 justify-center p-2">
+                    <div className="flex flex-row">
+                        <div className="text-xl font-bold">{name}</div>
+                        <div className="grow"></div>
+                        <div>$ {numberWithSep(moondata[0].price)} per acre</div>
+                    </div>
+                    <div>
+                        <form method="post" action="" className="flex flex-row">
+                            <label>Number of acres desired:</label>
+                            <div className="grow"></div>
+                            <input className='text-black max-w-[22%] rounded' type='text' name={moondata[0].name} onChange={(e) => addAcres(e, moondata[0])}></input>
+                        </form>
+                    </div>
+                    <button className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"  type='button' onClick={() => addToCart(moondata[0])}>Add to Cart</button>
+                </div>
+            </div>
         </div>
     )
 }
