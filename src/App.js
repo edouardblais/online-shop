@@ -37,6 +37,11 @@ const App = () => {
         setCart([]);
     }
 
+    const deleteItem = (itemtodelete) => {
+        const cartminusitem = [...cart].filter((item) => item !== itemtodelete)
+        setCart([...cartminusitem]);
+    }
+
     useEffect(() => {
         const pricesXacres = [...cart].map((moon) => moon.count*moon.price);
         const newtotalprice = pricesXacres.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
@@ -69,7 +74,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                     <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message}/>} />
                         <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres}/>} />
-                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity}/>} />
+                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
                         <Route path='/Cart/Checkout' element={<Checkout/>} />
             </Routes>
         </BrowserRouter>
