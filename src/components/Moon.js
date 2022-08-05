@@ -17,10 +17,14 @@ const Moon = ({addAcres,
                 </div>
                 <div  className="flex flex-col gap-4 justify-center p-2">
                     <div className="flex flex-row">
-                        <div className="text-xl font-bold">{name}</div>
+                        <div className="flex flex-col">
+                            <div className="text-xl font-bold">{name}</div>
+                            <div className="italic">Moon of {moondata[0].planet}</div>
+                        </div>
                         <div className="grow"></div>
                         <div>$ {numberWithSep(moondata[0].price)} per acre</div>
                     </div>
+                    <div>{moondata[0].info}</div>
                     <div>
                         <form method="post" action="" className="flex flex-row">
                             <label>Number of acres desired:</label>

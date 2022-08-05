@@ -18,7 +18,10 @@ const Shop = ({addToCart,
                                     </div>
                                     <div className="flex flex-col gap-4 justify-center p-2">
                                         <div className="flex flex-row">
-                                            <div className="font-bold text-xl">{mooninfo.name}</div>
+                                            <div className="flex flex-col">
+                                                <div className="font-bold text-xl">{mooninfo.name}</div>
+                                                <div className="italic">Moon of {mooninfo.planet}</div>
+                                            </div>
                                             <div className="grow"></div>
                                             <div className="text-md">$ {numberWithSep(mooninfo.price)} per acre</div>
                                         </div>

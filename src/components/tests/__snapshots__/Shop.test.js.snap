@@ -28,9 +28,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                The Moon
+                <div
+                  className="font-bold text-xl"
+                >
+                  The Moon
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Earth
+                </div>
               </div>
               <div
                 className="grow"
@@ -108,6 +118,108 @@ Array [
         >
           <div>
             <img
+              alt="Phobos"
+              className="aspect-auto max-w-lg"
+              src="phobos.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
+          >
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="flex flex-col"
+              >
+                <div
+                  className="font-bold text-xl"
+                >
+                  Phobos
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Mars
+                </div>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Phobos"
+                >
+                  Number of acres desired on 
+                  Phobos
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Phobos"
+                  name="Phobos"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Phobos"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex flex-row gap-4"
+        >
+          <div>
+            <img
               alt="Callisto"
               className="aspect-auto max-w-lg"
               src="Callisto.jpg"
@@ -120,9 +232,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Callisto
+                <div
+                  className="font-bold text-xl"
+                >
+                  Callisto
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Jupiter
+                </div>
               </div>
               <div
                 className="grow"
@@ -212,9 +334,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Io
+                <div
+                  className="font-bold text-xl"
+                >
+                  Io
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Jupiter
+                </div>
               </div>
               <div
                 className="grow"
@@ -292,190 +424,6 @@ Array [
         >
           <div>
             <img
-              alt="Charon"
-              className="aspect-auto max-w-lg"
-              src="charon.jpg"
-            />
-          </div>
-          <div
-            className="flex flex-col gap-4 justify-center p-2"
-          >
-            <div
-              className="flex flex-row"
-            >
-              <div
-                className="font-bold text-xl"
-              >
-                Charon
-              </div>
-              <div
-                className="grow"
-              />
-              <div
-                className="text-md"
-              >
-                $ 
-                 per acre
-              </div>
-            </div>
-            <div
-              className="flex flex-col"
-            >
-              <form
-                action=""
-                className="flex flex-row gap-2"
-                method="post"
-              >
-                <label
-                  className="text-md"
-                  htmlFor="Charon"
-                >
-                  Number of acres desired on 
-                  Charon
-                </label>
-                <div
-                  className="grow"
-                />
-                <input
-                  className="text-black max-w-[22%] rounded"
-                  id="Charon"
-                  name="Charon"
-                  onChange={[Function]}
-                  type="number"
-                />
-              </form>
-              <div
-                className="font-bold text-md"
-              />
-            </div>
-            <div
-              className="flex flex-row items-center"
-            >
-              <div
-                className="flex items-center justify-center"
-              >
-                <a
-                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
-                  href="/Charon"
-                  onClick={[Function]}
-                >
-                  See Info
-                </a>
-              </div>
-              <div
-                className="grow"
-              />
-              <div
-                className="flex items-center justify-center"
-              >
-                <button
-                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex flex-row gap-4"
-        >
-          <div>
-            <img
-              alt="Enceladus"
-              className="aspect-auto max-w-lg"
-              src="enceladus.jpg"
-            />
-          </div>
-          <div
-            className="flex flex-col gap-4 justify-center p-2"
-          >
-            <div
-              className="flex flex-row"
-            >
-              <div
-                className="font-bold text-xl"
-              >
-                Enceladus
-              </div>
-              <div
-                className="grow"
-              />
-              <div
-                className="text-md"
-              >
-                $ 
-                 per acre
-              </div>
-            </div>
-            <div
-              className="flex flex-col"
-            >
-              <form
-                action=""
-                className="flex flex-row gap-2"
-                method="post"
-              >
-                <label
-                  className="text-md"
-                  htmlFor="Enceladus"
-                >
-                  Number of acres desired on 
-                  Enceladus
-                </label>
-                <div
-                  className="grow"
-                />
-                <input
-                  className="text-black max-w-[22%] rounded"
-                  id="Enceladus"
-                  name="Enceladus"
-                  onChange={[Function]}
-                  type="number"
-                />
-              </form>
-              <div
-                className="font-bold text-md"
-              />
-            </div>
-            <div
-              className="flex flex-row items-center"
-            >
-              <div
-                className="flex items-center justify-center"
-              >
-                <a
-                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
-                  href="/Enceladus"
-                  onClick={[Function]}
-                >
-                  See Info
-                </a>
-              </div>
-              <div
-                className="grow"
-              />
-              <div
-                className="flex items-center justify-center"
-              >
-                <button
-                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex flex-row gap-4"
-        >
-          <div>
-            <img
               alt="Ganymede"
               className="aspect-auto max-w-lg"
               src="ganymede.jpg"
@@ -488,9 +436,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Ganymede
+                <div
+                  className="font-bold text-xl"
+                >
+                  Ganymede
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Jupiter
+                </div>
               </div>
               <div
                 className="grow"
@@ -580,9 +538,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Europa
+                <div
+                  className="font-bold text-xl"
+                >
+                  Europa
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Jupiter
+                </div>
               </div>
               <div
                 className="grow"
@@ -660,9 +628,9 @@ Array [
         >
           <div>
             <img
-              alt="Phobos"
+              alt="Enceladus"
               className="aspect-auto max-w-lg"
-              src="phobos.jpg"
+              src="enceladus.jpg"
             />
           </div>
           <div
@@ -672,9 +640,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Phobos
+                <div
+                  className="font-bold text-xl"
+                >
+                  Enceladus
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Saturn
+                </div>
               </div>
               <div
                 className="grow"
@@ -696,18 +674,18 @@ Array [
               >
                 <label
                   className="text-md"
-                  htmlFor="Phobos"
+                  htmlFor="Enceladus"
                 >
                   Number of acres desired on 
-                  Phobos
+                  Enceladus
                 </label>
                 <div
                   className="grow"
                 />
                 <input
                   className="text-black max-w-[22%] rounded"
-                  id="Phobos"
-                  name="Phobos"
+                  id="Enceladus"
+                  name="Enceladus"
                   onChange={[Function]}
                   type="number"
                 />
@@ -724,7 +702,7 @@ Array [
               >
                 <a
                   className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
-                  href="/Phobos"
+                  href="/Enceladus"
                   onClick={[Function]}
                 >
                   See Info
@@ -764,9 +742,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Titan
+                <div
+                  className="font-bold text-xl"
+                >
+                  Titan
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Saturn
+                </div>
               </div>
               <div
                 className="grow"
@@ -856,9 +844,19 @@ Array [
               className="flex flex-row"
             >
               <div
-                className="font-bold text-xl"
+                className="flex flex-col"
               >
-                Triton
+                <div
+                  className="font-bold text-xl"
+                >
+                  Triton
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Neptune
+                </div>
               </div>
               <div
                 className="grow"
@@ -909,6 +907,108 @@ Array [
                 <a
                   className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
                   href="/Triton"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex flex-row gap-4"
+        >
+          <div>
+            <img
+              alt="Charon"
+              className="aspect-auto max-w-lg"
+              src="charon.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
+          >
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="flex flex-col"
+              >
+                <div
+                  className="font-bold text-xl"
+                >
+                  Charon
+                </div>
+                <div
+                  className="italic"
+                >
+                  Moon of 
+                  Pluto
+                </div>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Charon"
+                >
+                  Number of acres desired on 
+                  Charon
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Charon"
+                  name="Charon"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Charon"
                   onClick={[Function]}
                 >
                   See Info

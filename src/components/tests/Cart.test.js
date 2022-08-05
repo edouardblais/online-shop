@@ -43,26 +43,4 @@ describe('Cart component', () => {
         const phobos = screen.queryByText('Phobos');
         expect(phobos).not.toBeInTheDocument();
     })
-
-    it('renders correct total price for each moon', () => {
-        const cartmock = [
-            {name:'The Moon',
-             price: 9,
-             count: 1000,
-            },
-            {name:'Callisto',
-             price: 2,
-             count: 10,
-            },]
-        
-        const numberWithSepMock = jest.fn((x) =>  x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
-        
-        render(<Cart cart={cartmock} numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter});
-
-        const expectedtotalpriceforTheMoon = screen.queryByText('$ 9 000');
-        expect(expectedtotalpriceforTheMoon).toBeInTheDocument();
-        
-        const expectedtotalpriceforCallisto = screen.queryByText('$ 2 000');
-        expect(expectedtotalpriceforCallisto).toBeInTheDocument();
-    })
 })

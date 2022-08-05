@@ -18,7 +18,10 @@ const Cart = ({cart,
                         
                         <div key={index} className="flex flex-row gap-4 items-center justify-center border-b border-black p-2">
                             <img alt={item.name} src={item.image} className="aspect-auto max-w-[25%] rounded"></img>
-                            <div className="font-bold text-lg">{item.name}</div>
+                            <div className="flex flex-col">
+                                <div className="font-bold text-lg">{item.name}</div>
+                                <div className="italic">Moon of {item.planet}</div>
+                            </div>
                             <div className="grow"></div>
                             <div className="flex flex-col gap-4 items-center">
                                 <div className="gap-2 flex-row flex">
@@ -35,7 +38,7 @@ const Cart = ({cart,
                 <div className="flex flex-row gap-2 items-center justify-start">
                     <button className="font-bold text-lg rounded bg-black text-white p-2 " onClick={clearCart}>Clear Cart</button>
                     <div className="flex grow"></div> 
-                    <div className="font-bold text-lg">Total: {numberWithSep(totalprice)}$</div>
+                    <div className="font-bold text-lg">Total: $ {numberWithSep(totalprice)}</div>
                 </div>
                 <div className="items-center flex flex-row justify-center">
                     <Link to='Checkout' className="font-bold text-lg rounded bg-black text-white p-2">Proceed To Payment</Link >
