@@ -6,10 +6,11 @@ import userEvent from '@testing-library/user-event';
 
 describe('Shop component', () => {
     it('renders correctly', () => {
+        const numberWithSepMock = jest.fn();
         const shop = TestRenderer
             .create(
                 <MemoryRouter>
-                    <Shop />)
+                    <Shop numberWithSep={numberWithSepMock}/>)
                 </MemoryRouter>
             )
             .toJSON();
@@ -18,8 +19,9 @@ describe('Shop component', () => {
 
     it('calls onChange correct amount of times', () => {
         const addAcresMock = jest.fn();
-        render(<Shop addAcres={addAcresMock} />, {wrapper: MemoryRouter});
-        const input = screen.getByLabelText('Number of acres desired on Callisto:');
+        const numberWithSepMock = jest.fn();
+        render(<Shop addAcres={addAcresMock} numberWithSep={numberWithSepMock} />, {wrapper: MemoryRouter});
+        const input = screen.getByLabelText('Number of acres desired on Callisto');
         
         userEvent.type(input, '100');
 
@@ -28,15 +30,17 @@ describe('Shop component', () => {
 
     it('does not accept strings', () => {
         const addAcresMock = jest.fn();
-        render(<Shop addAcres={addAcresMock}/>, {wrapper: MemoryRouter})
-        const input = screen.getByLabelText('Number of acres desired on Callisto:');
+        const numberWithSepMock = jest.fn();
+        render(<Shop addAcres={addAcresMock} numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter})
+        const input = screen.getByLabelText('Number of acres desired on Callisto');
 
         userEvent.type(input, 'allo');
         expect(addAcresMock).not.toHaveBeenCalled();
     })
 
     it('renders appropriate image', () => {
-        render(<Shop/>, {wrapper: MemoryRouter});
+        const numberWithSepMock = jest.fn();
+        render(<Shop numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter});
         const img = screen.getByAltText('Io');
 
         expect(img.src).toBe('http://localhost/io.jpg')

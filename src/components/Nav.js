@@ -4,17 +4,17 @@ import '../index.css'
 
 const Nav = ({cart}) => {
     return (
-        <nav className="flex flex-row text-white bg-black">
-            <h3 className="text-xl">Moon Shop</h3>
+        <nav className="flex flex-row text-white bg-black p-2">
+            <h1 className="text-xl font-bold">To The Moon</h1>
             <ul className="flex flex-grow flex-row justify-evenly">
                 <Link to=''>
-                    <li>Home</li>
+                    <li className="text-xl font-bold">Home</li>
                 </Link>
                 <Link to='Shop'>
-                    <li>Shop</li>
+                    <li className="text-xl font-bold">Shop</li>
                 </Link>
                 <Link to='Cart'>
-                    <li>Cart({cart.length})</li>
+                    <li className="text-xl font-bold">Cart({cart.length})</li>
                 </Link>
             </ul>
         </nav>

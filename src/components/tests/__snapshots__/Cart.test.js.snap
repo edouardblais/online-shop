@@ -3,13 +3,13 @@
 exports[`Cart component renders correctly 1`] = `
 Array [
   <div
-    className="bg-black flex flex-col items-center flex-grow h-screen p-24"
+    className="bg-black flex flex-col items-center flex-grow min-h-screen p-24"
   >
     <div
-      className="bg-white text-black flex flex-col items-center grow gap-4 p-4 max-w-xl"
+      className="bg-white text-black flex flex-col grow gap-4 p-4 max-w-xl min-w-[25%] rounded"
     >
       <div
-        className="gap-8 flex flex-col"
+        className="gap-4 flex flex-col"
       />
       <div
         className="flex flex-row gap-2 items-center justify-start"
@@ -20,7 +20,7 @@ Array [
           Clear Cart
         </button>
         <div
-          className="grow"
+          className="flex grow"
         />
         <div
           className="font-bold text-lg"
@@ -29,13 +29,17 @@ Array [
           $
         </div>
       </div>
-      <a
-        className="font-bold text-lg rounded bg-black text-white p-2"
-        href="/Checkout"
-        onClick={[Function]}
+      <div
+        className="items-center flex flex-row justify-center"
       >
-        Proceed To Payment
-      </a>
+        <a
+          className="font-bold text-lg rounded bg-black text-white p-2"
+          href="/Checkout"
+          onClick={[Function]}
+        >
+          Proceed To Payment
+        </a>
+      </div>
     </div>
   </div>,
   ")",

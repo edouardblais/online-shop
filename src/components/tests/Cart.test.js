@@ -5,10 +5,11 @@ import Cart from '../Cart';
 
 describe('Cart component', () => {
     it('renders correctly', () => {
+        const numberWithSepMock = jest.fn();
         const cart = TestRenderer
             .create(
                 <MemoryRouter>
-                    <Cart />)
+                    <Cart numberWithSep={numberWithSepMock}/>)
                 </MemoryRouter>
             )
             .toJSON();
@@ -26,7 +27,9 @@ describe('Cart component', () => {
              count: 0,
             },]
         
-        render(<Cart cart={cartmock}/>, {wrapper: MemoryRouter});
+        const numberWithSepMock = jest.fn();
+        
+        render(<Cart cart={cartmock} numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter});
 
         const moon = screen.queryByText('The Moon');
         expect(moon).toBeInTheDocument();
@@ -45,19 +48,21 @@ describe('Cart component', () => {
         const cartmock = [
             {name:'The Moon',
              price: 9,
-             count: 10,
+             count: 1000,
             },
             {name:'Callisto',
              price: 2,
              count: 10,
             },]
         
-        render(<Cart cart={cartmock}/>, {wrapper: MemoryRouter});
+        const numberWithSepMock = jest.fn((x) =>  x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+        
+        render(<Cart cart={cartmock} numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter});
 
-        const expectedtotalpriceforTheMoon = screen.queryByText('$ 90');
+        const expectedtotalpriceforTheMoon = screen.queryByText('$ 9 000');
         expect(expectedtotalpriceforTheMoon).toBeInTheDocument();
         
-        const expectedtotalpriceforCallisto = screen.queryByText('$ 20');
+        const expectedtotalpriceforCallisto = screen.queryByText('$ 2 000');
         expect(expectedtotalpriceforCallisto).toBeInTheDocument();
     })
 })

@@ -3,480 +3,934 @@
 exports[`Shop component renders correctly 1`] = `
 Array [
   <div
-    className="bg-black text-white flex flex-col justify-center flex-grow"
+    className="bg-black flex flex-col items-center flex-grow min-h-screen p-24"
   >
     <div
-      className="flex flex-row gap-6 flex-wrap"
+      className="bg-black text-white flex justify-center flex-col grow gap-4 p-4 max-w-[60%] min-w-[25%] rounded"
     >
-      <div>
-        <div>
-          The Moon
-        </div>
-        <div>
-          Price per acre: 
-          90000000
-          $
-        </div>
-        <img
-          alt="The Moon"
-          className="aspect-auto max-w-lg"
-          src="moon.jpg"
-        />
-        <a
-          href="/The Moon"
-          onClick={[Function]}
+      <div
+        className="flex flex-col gap-6 flex-wrap justify-center items-center"
+      >
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="The Moon"
+          <div>
+            <img
+              alt="The Moon"
+              className="aspect-auto max-w-lg"
+              src="moon.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            The Moon
-            :
-          </label>
-          <input
-            className="text-black"
-            id="The Moon"
-            name="The Moon"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Callisto
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                The Moon
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="The Moon"
+                >
+                  Number of acres desired on 
+                  The Moon
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="The Moon"
+                  name="The Moon"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/The Moon"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          20000000
-          $
-        </div>
-        <img
-          alt="Callisto"
-          className="aspect-auto max-w-lg"
-          src="Callisto.jpg"
-        />
-        <a
-          href="/Callisto"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Callisto"
+          <div>
+            <img
+              alt="Callisto"
+              className="aspect-auto max-w-lg"
+              src="Callisto.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Callisto
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Callisto"
-            name="Callisto"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Io
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Callisto
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Callisto"
+                >
+                  Number of acres desired on 
+                  Callisto
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Callisto"
+                  name="Callisto"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Callisto"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          70000000
-          $
-        </div>
-        <img
-          alt="Io"
-          className="aspect-auto max-w-lg"
-          src="io.jpg"
-        />
-        <a
-          href="/Io"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Io"
+          <div>
+            <img
+              alt="Io"
+              className="aspect-auto max-w-lg"
+              src="io.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Io
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Io"
-            name="Io"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Charon
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Io
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Io"
+                >
+                  Number of acres desired on 
+                  Io
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Io"
+                  name="Io"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Io"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          10000000
-          $
-        </div>
-        <img
-          alt="Charon"
-          className="aspect-auto max-w-lg"
-          src="charon.jpg"
-        />
-        <a
-          href="/Charon"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Charon"
+          <div>
+            <img
+              alt="Charon"
+              className="aspect-auto max-w-lg"
+              src="charon.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Charon
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Charon"
-            name="Charon"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Enceladus
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Charon
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Charon"
+                >
+                  Number of acres desired on 
+                  Charon
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Charon"
+                  name="Charon"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Charon"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          40000000
-          $
-        </div>
-        <img
-          alt="Enceladus"
-          className="aspect-auto max-w-lg"
-          src="enceladus.jpg"
-        />
-        <a
-          href="/Enceladus"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Enceladus"
+          <div>
+            <img
+              alt="Enceladus"
+              className="aspect-auto max-w-lg"
+              src="enceladus.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Enceladus
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Enceladus"
-            name="Enceladus"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Ganymede
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Enceladus
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Enceladus"
+                >
+                  Number of acres desired on 
+                  Enceladus
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Enceladus"
+                  name="Enceladus"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Enceladus"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          50000000
-          $
-        </div>
-        <img
-          alt="Ganymede"
-          className="aspect-auto max-w-lg"
-          src="ganymede.jpg"
-        />
-        <a
-          href="/Ganymede"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Ganymede"
+          <div>
+            <img
+              alt="Ganymede"
+              className="aspect-auto max-w-lg"
+              src="ganymede.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Ganymede
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Ganymede"
-            name="Ganymede"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Europa
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Ganymede
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Ganymede"
+                >
+                  Number of acres desired on 
+                  Ganymede
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Ganymede"
+                  name="Ganymede"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Ganymede"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          50000000
-          $
-        </div>
-        <img
-          alt="Europa"
-          className="aspect-auto max-w-lg"
-          src="europa.jpg"
-        />
-        <a
-          href="/Europa"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Europa"
+          <div>
+            <img
+              alt="Europa"
+              className="aspect-auto max-w-lg"
+              src="europa.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Europa
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Europa"
-            name="Europa"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Phobos
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Europa
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Europa"
+                >
+                  Number of acres desired on 
+                  Europa
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Europa"
+                  name="Europa"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Europa"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          30000000
-          $
-        </div>
-        <img
-          alt="Phobos"
-          className="aspect-auto max-w-lg"
-          src="phobos.jpg"
-        />
-        <a
-          href="/Phobos"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Phobos"
+          <div>
+            <img
+              alt="Phobos"
+              className="aspect-auto max-w-lg"
+              src="phobos.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Phobos
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Phobos"
-            name="Phobos"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Titan
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Phobos
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Phobos"
+                >
+                  Number of acres desired on 
+                  Phobos
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Phobos"
+                  name="Phobos"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Phobos"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          60000000
-          $
-        </div>
-        <img
-          alt="Titan"
-          className="aspect-auto max-w-lg"
-          src="titan.jpg"
-        />
-        <a
-          href="/Titan"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Titan"
+          <div>
+            <img
+              alt="Titan"
+              className="aspect-auto max-w-lg"
+              src="titan.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Titan
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Titan"
-            name="Titan"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
-      </div>
-      <div>
-        <div>
-          Triton
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Titan
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Titan"
+                >
+                  Number of acres desired on 
+                  Titan
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Titan"
+                  name="Titan"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Titan"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Price per acre: 
-          40000000
-          $
-        </div>
-        <img
-          alt="Triton"
-          className="aspect-auto max-w-lg"
-          src="triton.jpg"
-        />
-        <a
-          href="/Triton"
-          onClick={[Function]}
+        <div
+          className="flex flex-row gap-4"
         >
-          See Info
-        </a>
-        <form
-          action=""
-          method="post"
-        >
-          <label
-            htmlFor="Triton"
+          <div>
+            <img
+              alt="Triton"
+              className="aspect-auto max-w-lg"
+              src="triton.jpg"
+            />
+          </div>
+          <div
+            className="flex flex-col gap-4 justify-center p-2"
           >
-            Number of acres desired on 
-            Triton
-            :
-          </label>
-          <input
-            className="text-black"
-            id="Triton"
-            name="Triton"
-            onChange={[Function]}
-            type="number"
-          />
-        </form>
-        <div />
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          Add to Cart
-        </button>
+            <div
+              className="flex flex-row"
+            >
+              <div
+                className="font-bold text-xl"
+              >
+                Triton
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="text-md"
+              >
+                $ 
+                 per acre
+              </div>
+            </div>
+            <div
+              className="flex flex-col"
+            >
+              <form
+                action=""
+                className="flex flex-row gap-2"
+                method="post"
+              >
+                <label
+                  className="text-md"
+                  htmlFor="Triton"
+                >
+                  Number of acres desired on 
+                  Triton
+                </label>
+                <div
+                  className="grow"
+                />
+                <input
+                  className="text-black max-w-[22%] rounded"
+                  id="Triton"
+                  name="Triton"
+                  onChange={[Function]}
+                  type="number"
+                />
+              </form>
+              <div
+                className="font-bold text-md"
+              />
+            </div>
+            <div
+              className="flex flex-row items-center"
+            >
+              <div
+                className="flex items-center justify-center"
+              >
+                <a
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  href="/Triton"
+                  onClick={[Function]}
+                >
+                  See Info
+                </a>
+              </div>
+              <div
+                className="grow"
+              />
+              <div
+                className="flex items-center justify-center"
+              >
+                <button
+                  className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
