@@ -10,7 +10,7 @@ const Moon = ({addAcres,
     const moondata = Data.filter(moon => (moon.name === name));
 
     return (
-        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24">
+        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24 font-mono">
             <div className="bg-black text-white flex justify-center items-center grow gap-4 p-4 max-w-[60%] min-w-[25%]">
                 <div>
                     <img alt="" src={moondata[0].image} className="aspect-auto max-w-lg"></img>

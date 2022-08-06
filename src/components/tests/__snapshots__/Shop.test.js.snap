@@ -3,10 +3,10 @@
 exports[`Shop component renders correctly 1`] = `
 Array [
   <div
-    className="bg-black flex flex-col items-center flex-grow min-h-screen p-24"
+    className="bg-black flex flex-col items-center flex-grow min-h-screen p-24 font-mono"
   >
     <div
-      className="bg-black text-white flex justify-center flex-col grow gap-4 p-4 max-w-[60%] min-w-[25%] rounded"
+      className="bg-black text-white flex justify-center flex-col grow gap-4 p-4 max-w-[65%] min-w-[25%] rounded"
     >
       <div
         className="flex flex-col gap-6 flex-wrap justify-center items-center"

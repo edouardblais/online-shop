@@ -8,8 +8,8 @@ const Shop = ({addToCart,
                numberWithSep,
             }) => {
     return (
-        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24">
-            <div className="bg-black text-white flex justify-center flex-col grow gap-4 p-4 max-w-[60%] min-w-[25%] rounded">
+        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24 font-mono">
+            <div className="bg-black text-white flex justify-center flex-col grow gap-4 p-4 max-w-[65%] min-w-[25%] rounded">
                 <div className="flex flex-col gap-6 flex-wrap justify-center items-center">
                     {Data?.map((mooninfo) => {
                         return ( <div key={mooninfo.name} className="flex flex-row gap-4">
