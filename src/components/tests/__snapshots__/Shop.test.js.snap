@@ -31,12 +31,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   The Moon
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Earth
@@ -46,7 +46,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -133,12 +133,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Phobos
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Mars
@@ -148,7 +148,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -235,12 +235,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Callisto
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Jupiter
@@ -250,7 +250,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -337,12 +337,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Io
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Jupiter
@@ -352,7 +352,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -439,12 +439,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Ganymede
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Jupiter
@@ -454,7 +454,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -541,12 +541,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Europa
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Jupiter
@@ -556,7 +556,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -643,12 +643,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Enceladus
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Saturn
@@ -658,7 +658,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -745,12 +745,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Titan
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Saturn
@@ -760,7 +760,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -847,12 +847,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Triton
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Neptune
@@ -862,7 +862,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
@@ -949,12 +949,12 @@ Array [
                 className="flex flex-col"
               >
                 <div
-                  className="font-bold text-xl"
+                  className="font-bold text-2xl"
                 >
                   Charon
                 </div>
                 <div
-                  className="italic"
+                  className="italic text-xl"
                 >
                   Moon of 
                   Pluto
@@ -964,7 +964,7 @@ Array [
                 className="grow"
               />
               <div
-                className="text-md"
+                className="text-lg"
               >
                 $ 
                  per acre
