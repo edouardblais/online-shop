@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Data from './Data'
+import Data from './Data';
+import { Link } from "react-router-dom";
 
 const Moon = ({addAcres, 
                addToCart,
@@ -32,7 +33,11 @@ const Moon = ({addAcres,
                             <input className='text-black max-w-[22%] rounded' type='text' name={moondata[0].name} onChange={(e) => addAcres(e, moondata[0])}></input>
                         </form>
                     </div>
-                    <button className="font-bold text-lg rounded bg-black text-white p-1 border-white border-2"  type='button' onClick={() => addToCart(moondata[0])}>Add to Cart</button>
+                    <div className="items-center flex flex-row">
+                        <Link to='../Shop' className="text-xl rounded bg-black text-white p-1 border-white border-2">Back To Shop</Link >
+                        <div className="grow"></div>
+                        <button className="text-xl rounded bg-black text-white p-1 border-white border-2"  type='button' onClick={() => addToCart(moondata[0])}>Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
