@@ -11,7 +11,7 @@ const Cart = ({cart,
               }) => {
 
     return (
-        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24 font-mono">
+        <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-12 pb-36 font-mono">
             <div className="bg-white text-black flex flex-col grow gap-4 p-4 max-w-xl min-w-[25%] rounded">
                 <div className="gap-4 flex flex-col"> 
                     {cart?.map((item, index) => (
