@@ -26,11 +26,11 @@ const Cart = ({cart,
                                 <div className="grow"></div>
                                 <div className="flex flex-col gap-4 items-center">
                                     <div className="gap-2 flex-row flex">
-                                        <button className="rounded-full bg-black text-white p-2" onClick={() => decreaseQuantity(item, index)}>-10</button>
+                                        <button className="rounded-full bg-black text-white p-2 hover:scale-110" onClick={() => decreaseQuantity(item, index)}>-10</button>
                                         <div className="border-2 border-black p-1 rounded items-center flex">{numberWithSep(item.count)} acres</div>
-                                        <button className="rounded-full bg-black text-white p-2" onClick={() => increaseQuantity(item)}>+10</button>
+                                        <button className="rounded-full bg-black text-white p-2 hover:scale-110" onClick={() => increaseQuantity(item)}>+10</button>
                                     </div>
-                                    <button  className="border border-black p-1 rounded flex items-center" onClick={() => deleteItem(item)}>Delete</button>
+                                    <button  className="border border-black p-1 rounded flex items-center hover:scale-110" onClick={() => deleteItem(item)}>Delete</button>
                                     <div className="text-lg">$ {numberWithSep(item.price*item.count)}</div>
                                 </div>
                             </div>
@@ -42,15 +42,15 @@ const Cart = ({cart,
                     </div> 
                 )}
                 <div className="flex flex-row gap-2 items-center justify-start">
-                    <button className="text-xl rounded bg-black text-white p-1 flex items-center" onClick={clearCart}>Clear Cart</button>
+                    <button className="text-xl rounded bg-black text-white p-1 flex items-center hover:scale-110" onClick={clearCart}>Clear Cart</button>
                     <div className="flex grow"></div> 
                     <div className="font-bold text-lg flex items-center">Total: $ {numberWithSep(totalprice)}</div>
                 </div>
                 <div className="items-center flex flex-row justify-center">
-                    <Link to='Checkout' className="text-xl rounded bg-black text-white p-1">Checkout</Link >
+                    <Link to='Checkout' className="text-xl rounded bg-black text-white p-1 hover:scale-110">Checkout</Link >
                 </div>
                 <div className="items-center flex flex-row justify-center">
-                    <Link to='Shop' className="text-xl rounded bg-black text-white p-1">Back To Shop</Link >
+                    <Link to='Shop' className="text-xl rounded bg-black text-white p-1 hover:scale-110">Back To Shop</Link >
                 </div>
             </div>
         </div>

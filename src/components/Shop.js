@@ -35,11 +35,11 @@ const Shop = ({addToCart,
                                         </div>
                                         <div className="flex flex-row items-center">
                                             <div className="flex items-center justify-center">
-                                                <Link to={mooninfo.name} className="text-xl rounded bg-black text-white p-1 border-white border-2">See Info</Link >
+                                                <Link to={mooninfo.name} className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110">See Info</Link >
                                             </div>
                                             <div className="grow"></div>
                                             <div className="flex items-center justify-center">
-                                                <button className="text-xl rounded bg-black text-white p-1 border-white border-2" type='button' onClick={() => addToCart(mooninfo)}>Add to Cart</button>
+                                                <button className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110" type='button' onClick={() => addToCart(mooninfo)}>Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>
