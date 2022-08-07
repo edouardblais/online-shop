@@ -89,7 +89,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/The Moon"
                   onClick={[Function]}
                 >
@@ -103,7 +103,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -191,7 +191,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Phobos"
                   onClick={[Function]}
                 >
@@ -205,7 +205,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -293,7 +293,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Callisto"
                   onClick={[Function]}
                 >
@@ -307,7 +307,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -395,7 +395,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Io"
                   onClick={[Function]}
                 >
@@ -409,7 +409,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -497,7 +497,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Ganymede"
                   onClick={[Function]}
                 >
@@ -511,7 +511,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -599,7 +599,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Europa"
                   onClick={[Function]}
                 >
@@ -613,7 +613,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -701,7 +701,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Enceladus"
                   onClick={[Function]}
                 >
@@ -715,7 +715,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -803,7 +803,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Titan"
                   onClick={[Function]}
                 >
@@ -817,7 +817,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -905,7 +905,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Triton"
                   onClick={[Function]}
                 >
@@ -919,7 +919,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >
@@ -1007,7 +1007,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <a
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   href="/Charon"
                   onClick={[Function]}
                 >
@@ -1021,7 +1021,7 @@ Array [
                 className="flex items-center justify-center"
               >
                 <button
-                  className="text-xl rounded bg-black text-white p-1 border-white border-2"
+                  className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"
                   onClick={[Function]}
                   type="button"
                 >

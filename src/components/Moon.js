@@ -12,25 +12,25 @@ const Moon = ({addAcres,
 
     return (
         <div className="bg-black flex flex-col items-center flex-grow min-h-screen p-24 font-mono">
-            <div className="bg-black text-white flex justify-center items-center grow gap-4 p-4 max-w-[60%] min-w-[25%]">
+            <div className="bg-black text-white flex justify-center items-center grow gap-4 p-4 max-w-[70%] min-w-[25%]">
                 <div>
                     <img alt="" src={moondata[0].image} className="aspect-auto max-w-lg"></img>
                 </div>
                 <div  className="flex flex-col gap-4 justify-center p-2">
                     <div className="flex flex-row">
                         <div className="flex flex-col">
-                            <div className="text-xl font-bold">{name}</div>
-                            <div className="italic">Moon of {moondata[0].planet}</div>
+                            <div className="text-2xl font-bold">{name}</div>
+                            <div className="italic text-xl">Moon of {moondata[0].planet}</div>
                         </div>
                         <div className="grow"></div>
-                        <div>$ {numberWithSep(moondata[0].price)} per acre</div>
+                        <div className="text-lg">$ {numberWithSep(moondata[0].price)} per acre</div>
                     </div>
                     <div>{moondata[0].info}</div>
                     <div>
                         <form method="post" action="" className="flex flex-row">
-                            <label>Number of acres desired:</label>
+                            <label className="text-xl">Number of acres desired:</label>
                             <div className="grow"></div>
-                            <input className='text-black max-w-[22%] rounded' type='text' name={moondata[0].name} onChange={(e) => addAcres(e, moondata[0])}></input>
+                            <input className='text-black max-w-[25%] rounded' type='text' name={moondata[0].name} onChange={(e) => addAcres(e, moondata[0])}></input>
                         </form>
                     </div>
                     <div className="items-center flex flex-row">

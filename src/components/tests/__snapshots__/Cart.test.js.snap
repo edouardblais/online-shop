@@ -17,7 +17,7 @@ Array [
         className="flex flex-row gap-2 items-center justify-start"
       >
         <button
-          className="text-xl rounded bg-black text-white p-1 flex items-center"
+          className="text-xl rounded bg-black text-white p-1 flex items-center hover:scale-110"
         >
           Clear Cart
         </button>
@@ -34,7 +34,7 @@ Array [
         className="items-center flex flex-row justify-center"
       >
         <a
-          className="text-xl rounded bg-black text-white p-1"
+          className="text-xl rounded bg-black text-white p-1 hover:scale-110"
           href="/Checkout"
           onClick={[Function]}
         >
@@ -45,7 +45,7 @@ Array [
         className="items-center flex flex-row justify-center"
       >
         <a
-          className="text-xl rounded bg-black text-white p-1"
+          className="text-xl rounded bg-black text-white p-1 hover:scale-110"
           href="/Shop"
           onClick={[Function]}
         >

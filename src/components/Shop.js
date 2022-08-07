@@ -19,11 +19,11 @@ const Shop = ({addToCart,
                                     <div className="flex flex-col gap-4 justify-center p-2">
                                         <div className="flex flex-row">
                                             <div className="flex flex-col">
-                                                <div className="font-bold text-xl">{mooninfo.name}</div>
-                                                <div className="italic">Moon of {mooninfo.planet}</div>
+                                                <div className="font-bold text-2xl">{mooninfo.name}</div>
+                                                <div className="italic text-xl">Moon of {mooninfo.planet}</div>
                                             </div>
                                             <div className="grow"></div>
-                                            <div className="text-md">$ {numberWithSep(mooninfo.price)} per acre</div>
+                                            <div className="text-lg">$ {numberWithSep(mooninfo.price)} per acre</div>
                                         </div>
                                         <div className="flex flex-col">
                                             <form method="post" action="" className="flex flex-row gap-2">
