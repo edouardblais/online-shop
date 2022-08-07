@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home'
-import Shop from './components/Shop'
-import Cart from './components/Cart'
-import Nav from './components/Nav'
-import Moon from './components/Moon'
-import Checkout from './components/Checkout'
+import Home from './components/Home';
+import Shop from './components/Shop';
+import Cart from './components/Cart';
+import Nav from './components/Nav';
+import Moon from './components/Moon';
+import Checkout from './components/Checkout';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -81,6 +82,7 @@ const App = () => {
                     <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} numberWithSep={numberWithSep} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
                         <Route path='/Cart/Checkout' element={<Checkout/>} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }
