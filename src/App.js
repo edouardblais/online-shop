@@ -43,13 +43,6 @@ const App = () => {
         setCart([...cartminusitem]);
     }
 
-    useEffect(() => {
-        const pricesXacres = [...cart].map((moon) => moon.count*moon.price);
-        const newtotalprice = pricesXacres.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
-        setTotalprice(newtotalprice);
-
-    }, [cart, totalprice])
-
     const increaseQuantity = (item) => {
         item.count += 10;
         setTotalprice(totalprice+(10*item.price));
@@ -71,6 +64,13 @@ const App = () => {
     const numberWithSep = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
       }
+    
+    useEffect(() => {
+        const pricesXacres = [...cart].map((moon) => moon.count*moon.price);
+        const newtotalprice = pricesXacres.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+        setTotalprice(newtotalprice);
+
+    }, [cart, totalprice])
 
   return (
         <BrowserRouter>
