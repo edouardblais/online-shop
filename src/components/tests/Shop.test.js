@@ -45,4 +45,26 @@ describe('Shop component', () => {
 
         expect(img.src).toBe('http://localhost/io.jpg')
     })
+
+    it('renders correct elements', () => {
+
+        const numberWithSepMock = jest.fn((x) => x);
+        
+        render(<Shop numberWithSep={numberWithSepMock}/>, {wrapper: MemoryRouter});
+
+        const moon = screen.getByText('The Moon');
+        expect(moon).toBeInTheDocument();
+
+        const planetofmoon = screen.getByText('Moon of Earth');
+        expect(planetofmoon).toBeInTheDocument();
+        
+        const callisto = screen.getByText('Callisto');
+        expect(callisto).toBeInTheDocument();
+
+        const planetofcallisto = screen.queryAllByText('Moon of Jupiter');
+        expect(planetofcallisto.length).toBe(4);
+
+        const moonprice = screen.getByText('$ 30000000 per acre');
+        expect(moonprice).toBeInTheDocument();
+    })
 })
