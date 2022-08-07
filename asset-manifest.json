@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/online-shop/static/css/main.f82bd37e.css",
+    "main.js": "/online-shop/static/js/main.90f738b0.js",
+    "static/media/homeimage.jpg": "/online-shop/static/media/homeimage.bb08685437994c74a717.jpg",
+    "static/media/moon.jpg": "/online-shop/static/media/moon.25dbe59e9872cc1c2d92.jpg",
+    "static/media/enceladus.jpg": "/online-shop/static/media/enceladus.eac5296fd8eb43d91490.jpg",
+    "static/media/io.jpg": "/online-shop/static/media/io.5aca6f1085e3fed18a20.jpg",
+    "static/media/europa.jpg": "/online-shop/static/media/europa.e53332645bbcff58c549.jpg",
+    "static/media/charon.jpg": "/online-shop/static/media/charon.83f632f07d8ee3baf7f5.jpg",
+    "static/media/titan.jpg": "/online-shop/static/media/titan.703f1188b7aa4e62f25e.jpg",
+    "static/media/phobos.jpg": "/online-shop/static/media/phobos.fe88313122547e8876e0.jpg",
+    "static/media/Callisto.jpg": "/online-shop/static/media/Callisto.1ee5e49971d63451f863.jpg",
+    "static/media/ganymede.jpg": "/online-shop/static/media/ganymede.ff8db69284b056199429.jpg",
+    "static/media/triton.jpg": "/online-shop/static/media/triton.6ced4114e4e61e23594e.jpg",
+    "index.html": "/online-shop/index.html",
+    "main.f82bd37e.css.map": "/online-shop/static/css/main.f82bd37e.css.map",
+    "main.90f738b0.js.map": "/online-shop/static/js/main.90f738b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f82bd37e.css",
+    "static/js/main.90f738b0.js"
+  ]
+}
