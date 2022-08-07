@@ -17,7 +17,7 @@ const App = () => {
     const [message, setMessage] = useState('');
 
     const addToCart = (mooninfo) => {
-        if ((![...cart].includes(mooninfo)) && (mooninfo.count>=0)) {
+        if ((![...cart].includes(mooninfo)) && (mooninfo.count>0)) {
             setCart(prevState => [...prevState, mooninfo]);
         } else {
             return

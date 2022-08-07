@@ -13,7 +13,7 @@ const Cart = ({cart,
     return (
         <div className="bg-black flex flex-col items-center grow min-h-screen font-mono pt-12">
             <div className="bg-white text-black flex flex-col gap-4 p-4 max-w-xl min-w-[25%] rounded">
-                {cart.length > 0? (
+                {cart?.length > 0? (
                     <div className="gap-4 flex flex-col"> 
                         {cart?.map((item, index) => (
                             
