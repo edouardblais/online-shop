@@ -12,7 +12,7 @@ const Nav = ({cart}) => {
                 <h1 className="text-5xl">To The Moon</h1>
             </div>
             <ul className="flex flex-grow flex-row justify-evenly">
-                <Link to='' className="flex flex-row gap-1 items-center hover:scale-110">
+                <Link to='online-shop' className="flex flex-row gap-1 items-center hover:scale-110">
                     <svg className="fill-white h-10" viewBox="0 0 24 24">
                         <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3"/>
                     </svg>
