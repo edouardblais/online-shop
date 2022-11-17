@@ -76,7 +76,7 @@ const App = () => {
         <BrowserRouter>
             <Nav cart={cart}/>
             <Routes>
-                <Route path='/online-shop' element={<Home />} />
+                <Route path='' element={<Home />} />
                     <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message} numberWithSep={numberWithSep}/>} />
                         <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres} numberWithSep={numberWithSep}/>} />
                     <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} numberWithSep={numberWithSep} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
