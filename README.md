@@ -5,7 +5,7 @@ As the user shops and thus ads acres to purchase on different moons, the cart is
 Each Moon has its own information page.
 Each page provides useful common functions associated with the page's purpose (More info, Add To Cart, Delete Item, Clear Cart, Checkout, Add more Acres, Back To Shop etc.).
 
-Check it out live: https://edouardblais.github.io/
+Check it out live: https://edouardblais.github.io/online-shop/
 
 # Under the hood
 

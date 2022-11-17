@@ -76,11 +76,11 @@ const App = () => {
         <BrowserRouter>
             <Nav cart={cart}/>
             <Routes>
-                <Route path='' element={<Home />} />
-                    <Route path='/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message} numberWithSep={numberWithSep}/>} />
-                        <Route path='/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres} numberWithSep={numberWithSep}/>} />
-                    <Route path='/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} numberWithSep={numberWithSep} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
-                        <Route path='/Cart/Checkout' element={<Checkout/>} />
+                <Route path='/online-shop' element={<Home />} />
+                    <Route path='online-shop/Shop' element={<Shop addToCart={addToCart} addAcres={addAcres} message={message} numberWithSep={numberWithSep}/>} />
+                        <Route path='online-shop/Shop/:name' element={<Moon addToCart={addToCart} addAcres={addAcres} numberWithSep={numberWithSep}/>} />
+                    <Route path='online-shop/Cart' element={<Cart cart={cart} clearCart={clearCart} totalprice={totalprice} numberWithSep={numberWithSep} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} deleteItem={deleteItem}/>} />
+                        <Route path='online-shop/Cart/Checkout' element={<Checkout/>} />
             </Routes>
             <Footer />
         </BrowserRouter>

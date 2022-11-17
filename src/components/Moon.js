@@ -34,7 +34,7 @@ const Moon = ({addAcres,
                         </form>
                     </div>
                     <div className="items-center flex flex-row">
-                        <Link to='../Shop' className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110">Back To Shop</Link >
+                        <Link to='../online-shop/Shop' className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110">Back To Shop</Link >
                         <div className="grow"></div>
                         <button className="text-xl rounded bg-black text-white p-1 border-white border-2 hover:scale-110"  type='button' onClick={() => addToCart(moondata[0])}>Add to Cart</button>
                     </div>

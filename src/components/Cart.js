@@ -50,7 +50,7 @@ const Cart = ({cart,
                     <Link to='Checkout' className="text-xl rounded bg-black text-white p-1 hover:scale-110">Checkout</Link >
                 </div>
                 <div className="items-center flex flex-row justify-center">
-                    <Link to='../Shop' className="text-xl rounded bg-black text-white p-1 hover:scale-110">Back To Shop</Link >
+                    <Link to='../online-shop/Shop' className="text-xl rounded bg-black text-white p-1 hover:scale-110">Back To Shop</Link >
                 </div>
             </div>
         </div>
